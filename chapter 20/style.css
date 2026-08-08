@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Georgia, "Times New Roman", serif;
+    background: #f7f3ee;
+    color: #3f3a36;
+}
+
+.screen {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+.hidden {
+    display: none !important;
+}
+
+/* Cover */
+
+.cover-content {
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+}
+
+.cover-content h1 {
+    font-size: clamp(3rem, 8vw, 6.5rem);
+    font-weight: 400;
+    line-height: 1.05;
+    margin-bottom: 20px;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 35px;
+}
+
+.small-text {
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+/* Buttons */
+
+button {
+    font-family: inherit;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+#beginButton {
+    padding: 14px 30px;
+    background: #3f3a36;
+    color: white;
+    font-size: 1rem;
+}
+
+#beginButton:hover {
+    opacity: 0.8;
+}
+
+/* Reasons */
+
+.reason-card {
+    width: 100%;
+    max-width: 750px;
+    text-align: center;
+    padding: 60px 40px;
+}
+
+#reasonNumber {
+    font-size: 0.9rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+#reasonTitle {
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    font-weight: 400;
+    line-height: 1.2;
+    margin-bottom: 30px;
+}
+
+#reasonText {
+    font-size: 1.25rem;
+    line-height: 1.8;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Navigation */
+
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
+    margin-top: 50px;
+}
+
+.navigation button {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: #3f3a36;
+    color: white;
+    font-size: 1.2rem;
+}
+
+.navigation button:hover {
+    opacity: 0.8;
+}
+
+#progress {
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+}
+
+/* Final blessing */
+
+.final-content {
+    width: 100%;
+    max-width: 750px;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.final-content h1 {
+    font-size: clamp(2.5rem, 6vw, 4.5rem);
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+
+.final-content p:not(.small-text) {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+    .screen {
+        padding: 25px 15px;
+    }
+
+    .reason-card {
+        padding: 40px 20px;
+    }
+
+    #reasonText {
+        font-size: 1.1rem;
+    }
+
+    .final-content p:not(.small-text) {
+        font-size: 1rem;
+    }
+
+    .navigation {
+        margin-top: 35px;
+    }
+}
+#nextButton.continue-button {
+    width: auto;
+    min-width: 220px;
+    padding: 12px 22px;
+    border-radius: 30px;
+    white-space: nowrap;
+}
